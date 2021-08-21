@@ -1,4 +1,4 @@
-import React, {Component} from '../../client/src/node_modules/src/components/node_modules/react';
+import React, {Component} from 'react';
 import Square from './Square';
 
 export default class Board extends Component {

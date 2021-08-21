@@ -1,4 +1,4 @@
-import React from '../../client/src/node_modules/src/components/node_modules/react';
+import React from 'react';
 
 export default function Square(props) {
     return (
