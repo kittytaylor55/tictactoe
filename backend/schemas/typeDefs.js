@@ -1,13 +1,21 @@
 //documentation for build
-const {gql} = require('apollo-server-express')
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
-type Game {
-   _id: ID
-   xIsNext: Boolean
-}
+  type Game {
+    _id: ID
+    userid: ID
+    xIsNext: Boolean
+    history: [History]
+  }
 
-type User {
+  type History {
+    squares: [String]
+  }
+  input InputHistory {
+    squares: [String]
+  }
+  type User {
     _id: ID!
     email: String
   }
@@ -17,19 +25,20 @@ type User {
     user: User
   }
 
-type Query {
-    games: [Game], 
-    game(gameId:ID!): Game
+  type Query {
+    games: [Game]
+    game(gameId: ID!): Game
     me: User
-}
+  }
 
-type Mutation {
+  type Mutation {
     createGame: Game
+    updateGame(history: InputHistory): Game
     login(email: String!, password: String!): Auth
     signup(email: String!, password: String!): Auth
-}
-`
-   //add update game and more by create game
-module.exports = typeDefs
+  }
+`;
+//add update game and more by create game
+module.exports = typeDefs;
 
 //get by id, create game, update game

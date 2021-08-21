@@ -7,18 +7,45 @@ const resolvers = {
     games: async () => {
       return Game.find().sort({ createdAt: -1 });
     },
-    game: async (parent, { gameId }) => {
-      return Game.findOne({ _id: gameId });
+    game: async (parent, { gameId }, context) => {
+      if (context.user) {
+        return await Game.findOne({
+          userid: context.user._id,
+          isFinished: false,
+        });
+      }
+      throw new AuthenticationError("You need to be logged in!");
     },
     me: () => {
       return {};
     },
   },
   Mutation: {
-    createGame: async (parent, args) => {
-      const game = await Game.create({});
-      console.log(game);
-      return game;
+    createGame: async (parent, args, context) => {
+      if (context.user) {
+        const game = await Game.create({
+          history: [{ squares: Array(9).fill(null) }],
+          userid: context.user._id,
+        });
+        console.log(game);
+        return game;
+      }
+      throw new AuthenticationError("You need to be logged in!");
+    },
+    updateGame: async (parent, args, context) => {
+      if (context.user) {
+        return await Game.findOneAndUpdate(
+          { userid: context.user._id, isFinished: false },
+          {
+            ...args,
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+      }
+      throw new AuthenticationError("You need to be logged in!");
     },
     signup: async (parent, args) => {
       const user = await User.create(args);
@@ -30,13 +57,13 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const token = signToken(user);
