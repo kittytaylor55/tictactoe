@@ -1,10 +1,10 @@
 import { gql } from '@apollo/client';
 
-export const CREATE_GAME = gql `
-    mutation createGame {
+// export const CREATE_GAME = gql `
+//     mutation createGame {
 
-    }
-`
+//     }
+// `
 export const SIGN_UP = gql `
     mutation signup($email: String!, $password: String!) {
         signup(email: $email, password: $password){
