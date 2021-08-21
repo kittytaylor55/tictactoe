@@ -2,12 +2,14 @@
   "name": "tictactoe",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "database/server.js",
   "scripts": {
     "build": "cd tic-tac-toe && npm run build",
-    "install": "cd backend && npm i && cd ../tic-tac-toe && npm i",
-    "start": "node backend/server.js",
-    "develop": "concurrently \"cd backend && npm run watch\" \"cd tic-tac-toe && npm start\""
+    "install-client": "cd tic-tac-toe && npm install",
+    "heroku-postbuild": "npm run install-tic-tac-toe && npm run build",
+    "server": "node server/server.js",
+    "develop": "concurrently \"cd backend && npm run watch\" \"cd tic-tac-toe && npm start\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix tic-tac-toe\""
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,14 @@
   },
   "homepage": "https://github.com/kittytaylor55/tictactoe#readme",
   "dependencies": {
+<<<<<<< HEAD
     "concurrently": "^6.2.1",
     "graphql": "^15.5.1"
+=======
+    "concurrently": "^6.2.1"
+  },
+  "engines": {
+    "node": "v14.16.1"
+>>>>>>> ed0b7138cf8323c0cafa8fae8a243e5ad994bdb4
   }
 }
