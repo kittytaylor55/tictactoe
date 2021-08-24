@@ -23,14 +23,7 @@
   },
   "homepage": "https://github.com/kittytaylor55/tictactoe#readme",
   "dependencies": {
-<<<<<<< HEAD
     "concurrently": "^6.2.1",
     "graphql": "^15.5.1"
-=======
-    "concurrently": "^6.2.1"
-  },
-  "engines": {
-    "node": "v14.16.1"
->>>>>>> ed0b7138cf8323c0cafa8fae8a243e5ad994bdb4
   }
 }
