@@ -5,8 +5,8 @@
   "main": "database/server.js",
   "scripts": {
     "build": "cd tic-tac-toe && npm run build",
-    "install-client": "cd tic-tac-toe && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
+    "install": "cd backend && npm i && cd ../tic-tac-toe && npm install",
+    "heroku-postbuild": "npm run install && npm run build",
     "server": "node backend/server.js",
     "develop": "concurrently \"cd backend && npm run watch\" \"cd tic-tac-toe && npm start\"",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix tic-tac-toe\""
