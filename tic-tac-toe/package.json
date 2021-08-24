@@ -44,5 +44,8 @@
   },
   "devDependencies": {
     "nodemod": "^2.8.4"
+  },
+  "engines": {
+    "node": "16.4.2"
   }
 }
