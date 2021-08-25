@@ -38,7 +38,7 @@ function App() {
       <Router>
         <>
           <Route exact path="/">
-            <Signup />
+            <Game />
           </Route>
           <Route exact path="/signup">
             <Signup />

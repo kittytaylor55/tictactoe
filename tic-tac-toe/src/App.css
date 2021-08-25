@@ -129,6 +129,9 @@ ul {
   padding-left: 30px;
 }
 .game-info {
+  position: absolute;
+  right: -200px;
+  width: 200px;
   margin-left: 20px;
 }
 .status {

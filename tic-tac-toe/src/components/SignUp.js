@@ -5,7 +5,10 @@ import Auth from "../utils/auth";
 import { SIGN_UP } from "../utils/mutations";
 
 const SignupForm = () => {
-  const [userFormData, setUserFormData] = useState({ email: "", password: "" });
+  const [userFormData, setUserFormData] = useState({
+    username: "",
+    password: "",
+  });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [signup, { error }] = useMutation(SIGN_UP);
@@ -42,7 +45,7 @@ const SignupForm = () => {
     }
 
     setUserFormData({
-      email: "",
+      username: "",
       password: "",
     });
   };
@@ -59,17 +62,17 @@ const SignupForm = () => {
       </Alert>
 
       <Form.Group>
-        <Form.Label htmlFor="email">Email</Form.Label>
+        <Form.Label htmlFor="username">Username</Form.Label>
         <Form.Control
-          type="email"
-          placeholder="Your email address"
-          name="email"
+          type="username"
+          placeholder="Your username"
+          name="username"
           onChange={handleInputChange}
-          value={userFormData.email}
+          value={userFormData.username}
           required
         />
         <Form.Control.Feedback type="invalid">
-          Email is required!
+          Username is required!
         </Form.Control.Feedback>
       </Form.Group>
 
@@ -88,7 +91,7 @@ const SignupForm = () => {
         </Form.Control.Feedback>
       </Form.Group>
       <Button
-        disabled={!(userFormData.email && userFormData.password)}
+        disabled={!(userFormData.username && userFormData.password)}
         type="submit"
         variant="success"
       >

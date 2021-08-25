@@ -35,15 +35,43 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Tic Tac Toe</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1 w-100 text-center">Tic Tac Toe</span>
-      <span class="navbar-brand mb-0 h1 w-100 text-right"
-        >Login Profile Leader Board</span
+      <logo class="logo"
+        >T<span class="cap">ic</span>T<span class="cap">ac</span>T<span
+          class="cap"
+          >oe</span
+        ></logo
       >
+      <ul class="nav li">
+        <li><a href="/login">Login</a></li>
+
+        <li><a href="/signup">Signup</a></li>
+
+        <li><a href="/leaderboard">Leaderboard</a></li>
+
+        <li><a href="/game">Game</a></li>
+      </ul>
     </nav>
+
+    <!-- <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="/login">Login</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div> -->
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
