@@ -51,7 +51,6 @@ export default class Game extends Component {
 
   handleCpuMovement() {
     let rndMv;
-    let sqLoop = 0;
 
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
@@ -63,7 +62,7 @@ export default class Game extends Component {
         //Roll some Dice
         let diceRoll = Math.floor(Math.random() * 2);
         console.log(diceRoll);
-        if (diceRoll == 1) {
+        if (diceRoll === 1) {
           rndMv = sqLoop;
         }
         console.log(diceRoll);
