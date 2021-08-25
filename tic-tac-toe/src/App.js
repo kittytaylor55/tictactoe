@@ -50,9 +50,6 @@ function App() {
           <Route exact path="/game">
             <Game />
           </Route>
-          <Route exact path="/leaderboard">
-            <LeaderBoard />
-          </Route>
         </>
       </Router>
     </ApolloProvider>
