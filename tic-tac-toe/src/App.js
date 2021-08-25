@@ -3,6 +3,7 @@ import Game from "./components/Game";
 import "./App.css";
 import Signup from "./components/SignUp";
 import Login from "./components/Login";
+import LeaderBoard from "./components/LeaderBoard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {
   ApolloClient,
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route exact path="/game">
             <Game />
+          </Route>
+          <Route exact path="/leaderboard">
+            <LeaderBoard />
           </Route>
         </>
       </Router>
