@@ -137,3 +137,66 @@ ul {
 .status {
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  .square {
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(3, 238, 42);
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 235, 31);
+    font-weight: bold;
+    background-color: #000000;
+    margin: 10px;
+    border: 2px solid #da13f5;
+    background-image: linear-gradient(
+      bottom,
+      rgb(202, 29, 159) 0%,
+      rgb(202, 29, 159) 100%
+    );
+    background-image: -o-linear-gradient(
+      bottom,
+      rgb(202, 29, 159) 0%,
+      rgb(202, 29, 159) 100%
+    );
+    background-image: -moz-linear-gradient(
+      bottom,
+      rgb(202, 29, 159) 0%,
+      rgb(202, 29, 159) 100%
+    );
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgb(202, 29, 159) 0%,
+      rgb(202, 29, 159) 100%
+    );
+    background-image: -ms-linear-gradient(
+      bottom,
+      rgb(202, 29, 159) 0%,
+      rgb(202, 29, 159) 100%
+    );
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(8, 255, 49, 0.856);
+    -webkit-box-shadow: 0px 6px 0px #dd14e4, 0px 3px 15px rgba(0, 0, 0, 0.4),
+      inset 0px 1px 0px rgba(59, 253, 0, 0.918),
+      inset 0px 0px 3px rgba(59, 253, 0, 0.918);
+    -moz-box-shadow: 0px 6px 0px #dd14e4, 0px 3px 15px rgba(0, 0, 0, 0.4),
+      inset 0px 1px 0px rgba(59, 253, 0, 0.918),
+      inset 0px 0px 3px rgba(59, 253, 0, 0.918);
+    box-shadow: 0px 6px 0px #dd14e4, 0px 3px 15px rgba(0, 0, 0, 0.4),
+      inset 0px 1px 0px rgba(59, 253, 0, 0.918),
+      inset 0px 0px 3px rgba(59, 253, 0, 0.918);
+  }
+}
