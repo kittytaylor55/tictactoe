@@ -38,13 +38,13 @@ function App() {
       <Router>
         <>
           <Route exact path="/">
-            <Game />
+            <Login />
           </Route>
           <Route exact path="/signup">
             <Signup />
           </Route>
-          <Route exact path="/login">
-            <Login />
+          <Route exact path="/game">
+            <Game />
           </Route>
         </>
       </Router>
