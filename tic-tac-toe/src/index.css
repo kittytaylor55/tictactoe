@@ -1,13 +1,57 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+
+  font-family: "Staatliches", cursive, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #000000;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Staatliches", cursive;
+}
+
+.logo {
+  font-size: 48px;
+
+  /* moves logo to left*/
+  margin-right: auto;
+}
+
+.cap {
+  color: #ff00f2;
+}
+
+.nav {
+  list-style-type: none;
+  padding-top: 15px;
+  margin-right: 5px;
+  font-size: 30px;
+
+  /* keeps links inline instead of stacked */
+  display: inline-block;
+}
+
+/* Changed nav li */
+.nav li {
+  display: inline-block;
+  /* moves the content in nav bar to right*/
+  margin-left: 50px;
+}
+
+a {
+  /* link color when not visited */
+  color: #a12b90;
+  text-decoration: none;
+}
+
+/* Added a hover effect of turning pink when hovered over. */
+.nav li a:hover {
+  color: #ecb9ee;
+}
+/* Added a vidited effect of turning purple when link is visited. */
+.nav li a:visited {
+  color: #000000;
 }

@@ -1,6 +1,16 @@
+body {
+  background: url("./pics/neonflower.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Staatliches", cursive;
+  color: #000000;
+}
+
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(3, 238, 42);
   float: left;
   font-size: 50px;
   font-weight: bold;
@@ -13,91 +23,89 @@
   height: 80px;
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: rgb(0, 235, 31);
   font-weight: bold;
-  background-color: #538fbe;
+  background-color: #000000;
   margin: 10px;
-  border: 1px solid #2d6898;
+  border: 2px solid #da13f5;
   background-image: linear-gradient(
     bottom,
-    rgb(73, 132, 180) 0%,
-    rgb(97, 155, 203) 100%
+    rgb(202, 29, 159) 0%,
+    rgb(202, 29, 159) 100%
   );
   background-image: -o-linear-gradient(
     bottom,
-    rgb(73, 132, 180) 0%,
-    rgb(97, 155, 203) 100%
+    rgb(202, 29, 159) 0%,
+    rgb(202, 29, 159) 100%
   );
   background-image: -moz-linear-gradient(
     bottom,
-    rgb(73, 132, 180) 0%,
-    rgb(97, 155, 203) 100%
+    rgb(202, 29, 159) 0%,
+    rgb(202, 29, 159) 100%
   );
   background-image: -webkit-linear-gradient(
     bottom,
-    rgb(73, 132, 180) 0%,
-    rgb(97, 155, 203) 100%
+    rgb(202, 29, 159) 0%,
+    rgb(202, 29, 159) 100%
   );
   background-image: -ms-linear-gradient(
     bottom,
-    rgb(73, 132, 180) 0%,
-    rgb(97, 155, 203) 100%
+    rgb(202, 29, 159) 0%,
+    rgb(202, 29, 159) 100%
   );
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0, rgb(73, 132, 180)),
-    color-stop(1, rgb(97, 155, 203))
-  );
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0, 0, 0, 0.4),
-    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
-    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
-  -moz-box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0, 0, 0, 0.4),
-    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
-    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 6px 0px #2b638f, 0px 3px 15px rgba(0, 0, 0, 0.4),
-    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
-    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px -1px 0px rgba(8, 255, 49, 0.856);
+  -webkit-box-shadow: 0px 6px 0px #dd14e4, 0px 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0px 1px 0px rgba(59, 253, 0, 0.918),
+    inset 0px 0px 3px rgba(59, 253, 0, 0.918);
+  -moz-box-shadow: 0px 6px 0px #dd14e4, 0px 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0px 1px 0px rgba(59, 253, 0, 0.918),
+    inset 0px 0px 3px rgba(59, 253, 0, 0.918);
+  box-shadow: 0px 6px 0px #dd14e4, 0px 3px 15px rgba(0, 0, 0, 0.4),
+    inset 0px 1px 0px rgba(59, 253, 0, 0.918),
+    inset 0px 0px 3px rgba(59, 253, 0, 0.918);
 }
 .square:active {
-  background-image: linear-gradient(
-    bottom,
-    rgb(88, 154, 204) 0%,
-    rgb(90, 150, 199) 100%
-  );
+  background-image: linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   background-image: -o-linear-gradient(
     bottom,
-    rgb(88, 154, 204) 0%,
-    rgb(90, 150, 199) 100%
+    rgb(236, 0, 197) 0%,
+    rgb(236, 0, 197) 100%
   );
   background-image: -moz-linear-gradient(
     bottom,
-    rgb(88, 154, 204) 0%,
-    rgb(90, 150, 199) 100%
+    rgb(236, 0, 197) 0%,
+    rgb(236, 0, 197) 100%
   );
   background-image: -webkit-linear-gradient(
     bottom,
-    rgb(88, 154, 204) 0%,
-    rgb(90, 150, 199) 100%
+    rgb(236, 0, 197) 0%,
+    rgb(236, 0, 197) 100%
   );
   background-image: -ms-linear-gradient(
     bottom,
-    rgb(88, 154, 204) 0%,
-    rgb(90, 150, 199) 100%
+    rgb(236, 0, 197) 0%,
+    rgb(236, 0, 197) 100%
   );
 
-  background-image: -webkit-gradient(
+  background-image: (
     linear,
     left bottom,
     left top,
-    color-stop(0, rgb(88, 154, 204)),
-    color-stop(1, rgb(90, 150, 199))
+    color-stop(0, rgb(1, 230, 32)),
+    color-stop(1, rgb(1, 230, 32))
   );
+}
+
+.navbar {
+  background: rgb(3, 238, 3);
+  border: 1px solid rgb(3, 238, 42);
+  color: #000000;
+  font-size: 150px;
+  background: -webkit-linear-gradient(rgb(233, 255, 39), rgb(0, 255, 98));
 }
 
 /* Board */
@@ -112,7 +120,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
+  display: block;
   flex-direction: row;
   margin: 0 auto;
 }
@@ -121,6 +129,9 @@ ul {
   padding-left: 30px;
 }
 .game-info {
+  position: absolute;
+  right: -200px;
+  width: 200px;
   margin-left: 20px;
 }
 .status {
